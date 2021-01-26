@@ -4,6 +4,7 @@
 enum GameObjectType {
 	NONE = -1,
 	SPACE_SHIP,
+	OBSTACLE,
 	SHIP,
 	TARGET,
 	PLAYER,
