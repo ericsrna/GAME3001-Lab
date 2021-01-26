@@ -22,9 +22,14 @@ public:
 	// getters and setters
 	void setDestination(glm::vec2 destination);
 	void setMaxSpeed(float speed);
+	glm::vec2 getOrientation();
 	void setOrientation(glm::vec2 orientation);
-	void setRotation(float angle);
 	float getRotation() const;
+	void setRotation(float angle);
+	float getTurnRate();
+	void setTurnRate(float rate);
+	float getAccelerationRate();
+	void setAccelerationRate(float rate);
 
 private:
 	glm::vec2 m_destination;
@@ -32,6 +37,8 @@ private:
 	glm::vec2 m_orientation;
 	float m_rotationAngle;
 	float m_maxSpeed;
+	float m_turnRate;
+	float m_accelerationRate;
 
 	// private method
 	void m_Move();

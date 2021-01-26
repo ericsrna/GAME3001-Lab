@@ -129,6 +129,16 @@ Uint32 Game::getFrames() const
 	return m_frames;
 }
 
+float Game::getDeltaTime() const
+{
+	return m_deltaTime;
+}
+
+void Game::setDeltaTime(const float time)
+{
+	m_deltaTime = time;
+}
+
 void Game::changeSceneState(const SceneState new_state)
 {
 	if (new_state != m_currentSceneState) {
